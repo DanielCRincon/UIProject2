@@ -1,0 +1,32 @@
+<mvc:View
+        xmlns="sap.m"
+        xmlns:uxap="sap.uxap"
+        xmlns:mvc="sap.ui.core.mvc">
+        
+
+        <uxap:ObjectPageLayout>
+
+                <uxap:headerTitle>
+
+                        <uxap:ObjectPageDynamicHeaderTitle>
+
+                                <uxap:expandedHeading>
+
+                                        <Title text="Details"
+                                                wrapping="true"/>
+                                
+                                </uxap:expandedHeading>
+
+                                <uxap:expandedContent>
+                                        <Text text="Hi, everyone!"/>
+                                </uxap:expandedContent>
+                        
+                        </uxap:ObjectPageDynamicHeaderTitle>
+                
+                
+                </uxap:headerTitle>
+        
+        
+        </uxap:ObjectPageLayout>
+
+</mvc:View>
