@@ -18,4 +18,10 @@ export default class App extends BaseController {
         const model = new JSONModel(data);
         this.setModel(model, "view");
     }
+
+    private loadEmployees () : void {
+        const model = new JSONModel();
+        model.loadData("../model/Employees.json");
+        this.setModel(model, "employees"); 
+    }
 }

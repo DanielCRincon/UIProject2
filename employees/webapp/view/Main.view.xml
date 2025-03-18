@@ -83,7 +83,7 @@
              <f:content>
 
                 <Table id="table"
-                        items="{employees>/Employees}"
+                        items="{northwind>/Employees}"
                         growing="true"
                         growingScrollToLoad="true">
 
@@ -113,13 +113,14 @@
                     </columns>
 
                     <items>
-                        <ColumnListItem>
+                        <ColumnListItem type="Navigation"
+                                        press="onNavToDetails">
                             <cells>
-                                <ObjectIdentifier title="{employees>EmployeeID}"/>
-                                <Text text="{employees>LastName} {employees>FirstName}"/>
-                                <Text text="{employees>Country}"/>
-                                <Text text="{employees>City}"/>
-                                <Text text="{employees>PostalCode}"/>
+                                <ObjectIdentifier title="{northwind>EmployeeID}"/>
+                                <Text text="{northwind>LastName} {northwind>FirstName}"/>
+                                <Text text="{northwind>Country}"/>
+                                <Text text="{northwind>City}"/>
+                                <Text text="{northwind>PostalCode}"/>
                             </cells>
                         </ColumnListItem>
                     </items>
